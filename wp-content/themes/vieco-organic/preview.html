@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vieco Organic Theme Preview - Simplified Mobile Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo -->
+                <a href="#" class="site-logo flex items-center space-x-2">
+                    <span class="logo-icon text-2xl">🌿</span>
+                    <span class="logo-text font-bold text-xl text-gray-800">Vieco Organic</span>
+                </a>
+
+                <!-- Navigation Menu (Desktop) -->
+                <nav class="main-navigation hidden md:flex">
+                    <ul class="nav-menu flex space-x-8">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions flex items-center space-x-4">
+                    <a href="tel:0123456789" class="hotline-btn hidden md:inline-flex items-center space-x-2 text-green-600 hover:text-green-700 transition-colors">
+                        <span class="text-lg">📞</span>
+                        <span class="font-medium">Hotline</span>
+                    </a>
+                    <a href="#contact" class="order-btn hidden md:inline-flex bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors font-medium">Đặt hàng</a>
+                    <button class="mobile-menu-toggle md:hidden flex flex-col space-y-1" aria-label="Toggle navigation">
+                        <span class="block w-6 h-0.5 bg-gray-600"></span>
+                        <span class="block w-6 h-0.5 bg-gray-600"></span>
+                        <span class="block w-6 h-0.5 bg-gray-600"></span>
+                    </button>
+                </div>
+            </div>
+        </div>        <!-- Mobile Navigation -->
+        <div class="mobile-navigation md:hidden">
+            <div class="mobile-menu-overlay"></div>
+            <div class="mobile-menu-content">
+                <ul class="mobile-nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-actions">
+                    <a href="tel:0123456789" class="mobile-action-btn mobile-hotline">
+                        📞 Hotline
+                    </a>
+                    <a href="#contact" class="mobile-action-btn mobile-order">
+                        Đặt hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Demo Note -->
+    <div style="background: #f0f9ff; padding: 1rem; text-align: center; margin-top: 80px; border: 2px solid #0ea5e9;">
+        <p style="margin: 0; color: #0369a1; font-weight: 600;">📱 Mobile Navigation Updated! Click the hamburger menu on mobile to test the new simplified dropdown navigation.</p>
+    </div>
+
+    <style>
+        /* Include the main theme styles inline for preview */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .site-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #1b5e20;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .main-navigation {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #2e7d32;
+        }        .get-started-btn {
+            background: #2e7d32;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .get-started-btn:hover {
+            background: #1b5e20;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hotline-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #16a34a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .hotline-btn:hover {
+            color: #15803d;
+            background: rgba(22, 163, 74, 0.1);
+            text-decoration: none;
+        }
+
+        .order-btn {
+            background: #16a34a;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+        }        .order-btn:hover {
+            background: #15803d;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Mobile Menu Toggle */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            gap: 0.25rem;
+        }
+
+        .mobile-menu-toggle span {
+            width: 1.5rem;
+            height: 0.125rem;
+            background: #4b5563;
+            transition: all 0.3s ease;
+            border-radius: 1px;
+        }
+
+        /* Mobile Navigation */
+        .mobile-navigation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-navigation.mobile-active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .mobile-menu-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+        }
+
+        .mobile-menu-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 320px;
+            max-width: 85vw;
+            height: 100vh;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .mobile-navigation.mobile-active .mobile-menu-content {
+            transform: translateX(0);
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #f3f4f6;
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+        }
+
+        .mobile-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .mobile-logo .logo-icon {
+            font-size: 1.5rem;
+        }
+
+        .mobile-logo .logo-text {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: #1b5e20;
+        }
+
+        .mobile-menu-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #1b5e20;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .mobile-menu-close:hover {
+            background: rgba(27, 94, 32, 0.1);
+        }
+
+        .mobile-menu-body {
+            flex: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+        }
+
+        .mobile-nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mobile-nav-menu li {
+            margin: 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .mobile-nav-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .mobile-nav-menu a {
+            display: block;
+            padding: 1rem 0;
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .mobile-nav-menu a:hover {
+            color: #16a34a;
+            padding-left: 0.5rem;
+        }
+
+        .mobile-nav-menu a::before {
+            content: '';
+            position: absolute;
+            left: -1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 2px;
+            background: #16a34a;
+            transition: width 0.3s ease;
+        }
+
+        .mobile-nav-menu a:hover::before {
+            width: 0.5rem;
+        }
+
+        .mobile-menu-actions {
+            margin-top: 2rem;
+            border-top: 1px solid #f3f4f6;
+            padding-top: 1.5rem;
+        }
+
+        .mobile-hotline-btn,
+        .mobile-order-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-bottom: 0.75rem;
+        }
+
+        .mobile-hotline-btn {
+            background: rgba(22, 163, 74, 0.1);
+            color: #16a34a;
+            border: 1px solid rgba(22, 163, 74, 0.2);
+        }
+
+        .mobile-hotline-btn:hover {
+            background: rgba(22, 163, 74, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .mobile-order-btn {
+            background: #16a34a;
+            color: white;
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+        }
+
+        .mobile-order-btn:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(22, 163, 74, 0.4);
+        }
+
+        .btn-icon {
+            font-size: 1.2rem;
+        }
+
+        .btn-text {
+            font-size: 0.9rem;
+        }
+
+        .mobile-menu-footer {
+            padding: 1.5rem;
+            border-top: 1px solid #f3f4f6;
+            background: #f9fafb;
+        }
+
+        .mobile-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .mobile-social-links a {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: #16a34a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-social-links a:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-tagline {
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.875rem;
+            font-style: italic;
+            margin: 0;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #1b5e20;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1b5e20;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: #2e7d32;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #1b5e20;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #2e7d32;
+            padding: 15px 30px;
+            border: 2px solid #2e7d32;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #2e7d32;
+            color: white;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1b5e20;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1b5e20;
+            margin-bottom: 1rem;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #1b5e20;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #c8e6c9;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #e8f5e8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #c8e6c9;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2e7d32;
+            padding-top: 2rem;
+            text-align: center;
+            color: #c8e6c9;
+        }        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-navigation {
+                display: none;
+            }
+
+            .header-actions {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="site-logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">Vieco Organic</span>
+            </a>
+              <nav class="main-navigation">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+              <div class="header-actions">
+                <a href="tel:0123456789" class="hotline-btn">
+                    <span>📞</span>
+                    <span>Hotline</span>
+                </a>
+                <a href="#contact" class="order-btn">Đặt hàng</a>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-navigation">
+        <div class="mobile-menu-overlay"></div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">Vieco Organic</span>
+                </div>
+                <button class="mobile-menu-close" aria-label="Close menu">
+                    <span>×</span>
+                </button>
+            </div>
+            <div class="mobile-menu-body">
+                <ul class="mobile-nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-actions">
+                    <a href="tel:0123456789" class="mobile-hotline-btn">
+                        <span class="btn-icon">📞</span>
+                        <span class="btn-text">Hotline: 0123 456 789</span>
+                    </a>
+                    <a href="#contact" class="mobile-order-btn">
+                        <span class="btn-icon">🛒</span>
+                        <span class="btn-text">Đặt hàng ngay</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu-footer">
+                <div class="mobile-social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Zalo"><i class="fas fa-comment"></i></a>
+                </div>
+                <p class="mobile-menu-tagline">Organic • Fresh • Healthy</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Pure Organic Living Starts Here</h1>
+            <p class="hero-subtitle">Transform your lifestyle with premium organic products carefully sourced from certified sustainable farms. Experience the difference that pure, natural nutrition makes in your daily wellness journey.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15,000+</span>
+                    <span class="stat-label">Happy Families</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">800+</span>
+                    <span class="stat-label">Organic Products</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">99.8%</span>
+                    <span class="stat-label">Customer Satisfaction</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">Start Shopping</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Vieco Organic?</h2>
+            <p class="section-subtitle">Discover the benefits of choosing organic products for your health and the planet</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🌱</span>
+                    <h3 class="feature-title">100% Certified Organic</h3>
+                    <p class="feature-description">USDA certified organic products, completely free from synthetic pesticides, herbicides, and GMOs.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3 class="feature-title">Sustainably Sourced</h3>
+                    <p class="feature-description">Partnering with eco-conscious farms that prioritize soil health and biodiversity conservation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">💚</span>
+                    <h3 class="feature-title">Nutrient Dense</h3>
+                    <p class="feature-description">Higher nutritional value with more vitamins, minerals, and antioxidants than conventional products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vieco Organic</h3>
+                    <p>Pure organic living for a healthier tomorrow. Join thousands of families choosing sustainable nutrition.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📧 hello@viecoorganic.com</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>📍 123 Organic Lane, Green City</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vieco Organic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>    <script>
+        // Simple scroll effect for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileNav = document.querySelector('.mobile-navigation');
+            const mobileOverlay = document.querySelector('.mobile-menu-overlay');
+            
+            // Toggle mobile menu
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    if (mobileNav) {
+                        mobileNav.classList.toggle('mobile-active');
+                    }
+                    document.body.style.overflow = this.classList.contains('active') ? 'hidden' : '';
+                });
+            }
+
+            // Close menu with overlay click
+            if (mobileOverlay) {
+                mobileOverlay.addEventListener('click', function() {
+                    if (mobileToggle) mobileToggle.classList.remove('active');
+                    if (mobileNav) mobileNav.classList.remove('mobile-active');
+                    document.body.style.overflow = '';
+                });
+            }
+
+            // Close menu when clicking nav links or action buttons
+            document.querySelectorAll('.mobile-nav-menu a, .mobile-action-btn').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (mobileToggle) mobileToggle.classList.remove('active');
+                    if (mobileNav) mobileNav.classList.remove('mobile-active');
+                    document.body.style.overflow = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
