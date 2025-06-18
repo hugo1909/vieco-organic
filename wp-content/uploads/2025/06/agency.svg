@@ -1,0 +1,6 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-5 h-5 mr-2" data-lov-id="src/components/Hero.tsx:64:16" data-lov-name="Users" data-component-path="src/components/Hero.tsx" data-component-line="64" data-component-file="Hero.tsx" data-component-name="Users" data-component-content="%7B%22className%22%3A%22w-5%20h-5%20mr-2%22%7D">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" stroke="#16A34A" fill="none" stroke-width="2px"></path>
+                            <circle cx="9" cy="7" r="4" stroke="#16A34A" fill="none" stroke-width="2px"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" stroke="#16A34A" fill="none" stroke-width="2px"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#16A34A" fill="none" stroke-width="2px"></path>
+                        </svg>

@@ -1,0 +1,4 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user w-4 h-4" data-lov-id="src/components/BlogSection.tsx:90:18" data-lov-name="User" data-component-path="src/components/BlogSection.tsx" data-component-line="90" data-component-file="BlogSection.tsx" data-component-name="User" data-component-content="%7B%22className%22%3A%22w-4%20h-4%22%7D">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" stroke="#6B7280" fill="none" stroke-width="2px"></path>
+                                <circle cx="12" cy="7" r="4" stroke="#6B7280" fill="none" stroke-width="2px"></circle>
+                            </svg>

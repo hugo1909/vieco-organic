@@ -1,0 +1,3 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-8 h-8 text-green-600 ml-1" data-lov-id="src/components/Hero.tsx:100:20" data-lov-name="Play" data-component-path="src/components/Hero.tsx" data-component-line="100" data-component-file="Hero.tsx" data-component-name="Play" data-component-content="%7B%22className%22%3A%22w-8%20h-8%20text-green-600%20ml-1%22%7D">
+                                    <polygon points="6 3 20 12 6 21 6 3" stroke="#16A34A" fill="none" stroke-width="2px"></polygon>
+                                </svg>
