@@ -249,6 +249,15 @@
     $heading = $product_section['heading'];
     $content = $product_section['content'];
     $feature_block = $product_section['feature_block'];
+    $product_tabs = $product_section['product_tabs'];
+    $product_tab_title_1 = $product_tabs['product_tab_title_1'];
+    $product_tab_title_2 = $product_tabs['product_tab_title_2'];
+    $product_tab_title_3 = $product_tabs['product_tab_title_3'];
+    $product_tab_title_4 = $product_tabs['product_tab_title_4'];
+    $product_tab_1 = $product_tabs['product_tab_1'];
+    $product_tab_2 = $product_tabs['product_tab_2'];
+    $product_tab_3 = $product_tabs['product_tab_3'];
+    $product_tab_4 = $product_tabs['product_tab_4'];
     ?>
     <section id="products" class="feature-products-section">
         <div class="container">
@@ -260,10 +269,10 @@
                 <div class="products-tabs-wrapper">
                     <div class="products-tabs-block">
                         <div class="products-tabs-list">
-                            <button class="btn btn-secondary active" data-target="#all-products">Tất cả</button>
-                            <button class="btn btn-secondary" data-target="#egg-products">Trứng gà</button>
-                            <button class="btn btn-secondary" data-target="#chicken-products">Gà thảo dược</button>
-                            <button class="btn btn-secondary" data-target="#medicinal-products">Dược liệu</button>
+                            <button class="btn btn-secondary active" data-target="#all-products"><?php echo $product_tab_title_1; ?></button>
+                            <button class="btn btn-secondary" data-target="#egg-products"><?php echo $product_tab_title_2; ?></button>
+                            <button class="btn btn-secondary" data-target="#chicken-products"><?php echo $product_tab_title_3; ?></button>
+                            <button class="btn btn-secondary" data-target="#medicinal-products"><?php echo $product_tab_title_4; ?></button>
                         </div>
                     </div>
                     <div class="products-tabs-filter">
@@ -277,956 +286,390 @@
                 </div>
             </div>
             <div class="feature-products-box">
-                <div class="feature-products-content active" id="all-products">
-                    <div class="feature-products-list swiper swiper-slider">
-                        <div class="swiper-wrapper">
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Trứng gà</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(189)</span>
+                <?php if ($product_tab_1): ?>
+                    <div class="feature-products-content active" id="all-products">
+                        <div class="feature-products-list swiper swiper-slider">
+                            <div class="swiper-wrapper">
+                                <?php foreach ($product_tab_1 as $featured_post): ?>
+                                    <?php
+                                    $permalink = get_permalink($featured_post);
+                                    $title = get_the_title($featured_post);
+                                    $custom_field = get_field('field_name', $featured_post);
+                                    $thumbnail_url = get_the_post_thumbnail_url($featured_post);
+                                    ?>
+                                    <div class="product-card animate-in swiper-slide">
+                                        <div class="product-card-media">
+                                            <div class="product-card-image">
+                                                <a href="<?php echo esc_url($permalink); ?>" class="product-card-link">
+                                                    <?php if ($thumbnail_url): ?>
+                                                        <img src="<?php echo $thumbnail_url; ?>" alt="">
+                                                    <?php else: ?>
+                                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="Placeholder Image">
+                                                    <?php endif; ?>
+                                                </a>
+                                            </div>
+                                            <span class="product-card-qr">
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
+                                                        <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+                                                        <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+                                                        <path d="M21 21v.01"></path>
+                                                        <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+                                                        <path d="M3 12h.01"></path>
+                                                        <path d="M12 3h.01"></path>
+                                                        <path d="M12 16v.01"></path>
+                                                        <path d="M16 12h1"></path>
+                                                        <path d="M21 12v.01"></path>
+                                                        <path d="M12 21v-1"></path>
+                                                    </svg>
+                                                </a>
+                                            </span>
+                                            <span class="sale-label">20%</span>
+                                            <span class="cate-lable">Trứng gà</span>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="product-card-review">
+                                                <div class="product-card-review-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <span class="star-count">(189)</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="product-card-title"><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                            <div class="product-card-description">
+                                                <ul>
+                                                    <li>Giàu protein</li>
+                                                    <li>Tăng cường miễn dịch</li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span class="product-card-price-current">8.000đ</span>
+                                                <span class="product-card-price-old">10.000đ</span>
+                                            </div>
+                                            <div class="product-card-actions">
+                                                <a href="#" class="btn btn-primary btn-scale">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
+                                                        <circle cx="8" cy="21" r="1"></circle>
+                                                        <circle cx="19" cy="21" r="1"></circle>
+                                                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                                                    </svg>
+                                                    Thêm vào giỏ
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <h3 class="product-card-title"><a href="#">Trứng gà thảo dược tươi</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Giàu protein</li>
-                                            <li>Tăng cường miễn dịch</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">8.000đ</span>
-                                        <span class="product-card-price-old">10.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Gà thảo dược</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(67)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Gà thảo dược nguyên con</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Thịt chắc ngọt</li>
-                                            <li>Không chất bảo quản</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">280.000đ</span>
-                                        <span class="product-card-price-old">320.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="swiper-buttons feature-products-buttons">
+                                <div class="swiper-button-prev swiper-button"></div>
+                                <div class="swiper-button-next swiper-button"></div>
                             </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Trứng gà</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(189)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Trứng gà thảo dược tươi</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Giàu protein</li>
-                                            <li>Tăng cường miễn dịch</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">8.000đ</span>
-                                        <span class="product-card-price-old">10.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Gà thảo dược</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(67)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Gà thảo dược nguyên con</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Thịt chắc ngọt</li>
-                                            <li>Không chất bảo quản</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">280.000đ</span>
-                                        <span class="product-card-price-old">320.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-buttons feature-products-buttons">
-                            <div class="swiper-button-prev swiper-button"></div>
-                            <div class="swiper-button-next swiper-button"></div>
                         </div>
                     </div>
-                </div>
-                <div class="feature-products-content" id="egg-products">
-                    <div class="feature-products-list swiper swiper-slider">
-                        <div class="swiper-wrapper">
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Trứng gà</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(189)</span>
+                <?php endif; ?>
+                <?php if ($product_tab_2): ?>
+                    <div class="feature-products-content" id="egg-products">
+                        <div class="feature-products-list swiper swiper-slider">
+                            <div class="swiper-wrapper">
+                                <?php foreach ($product_tab_2 as $featured_post): ?>
+                                    <?php
+                                    $permalink = get_permalink($featured_post);
+                                    $title = get_the_title($featured_post);
+                                    $custom_field = get_field('field_name', $featured_post);
+                                    $thumbnail_url = get_the_post_thumbnail_url($featured_post);
+                                    ?>
+                                    <div class="product-card animate-in swiper-slide">
+                                        <div class="product-card-media">
+                                            <div class="product-card-image">
+                                                <a href="<?php echo esc_url($permalink); ?>" class="product-card-link">
+                                                    <?php if ($thumbnail_url): ?>
+                                                        <img src="<?php echo $thumbnail_url; ?>" alt="">
+                                                    <?php else: ?>
+                                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="Placeholder Image">
+                                                    <?php endif; ?>
+                                                </a>
+                                            </div>
+                                            <span class="product-card-qr">
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
+                                                        <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+                                                        <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+                                                        <path d="M21 21v.01"></path>
+                                                        <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+                                                        <path d="M3 12h.01"></path>
+                                                        <path d="M12 3h.01"></path>
+                                                        <path d="M12 16v.01"></path>
+                                                        <path d="M16 12h1"></path>
+                                                        <path d="M21 12v.01"></path>
+                                                        <path d="M12 21v-1"></path>
+                                                    </svg>
+                                                </a>
+                                            </span>
+                                            <span class="sale-label">20%</span>
+                                            <span class="cate-lable">Trứng gà</span>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="product-card-review">
+                                                <div class="product-card-review-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <span class="star-count">(189)</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="product-card-title"><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                            <div class="product-card-description">
+                                                <ul>
+                                                    <li>Giàu protein</li>
+                                                    <li>Tăng cường miễn dịch</li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span class="product-card-price-current">8.000đ</span>
+                                                <span class="product-card-price-old">10.000đ</span>
+                                            </div>
+                                            <div class="product-card-actions">
+                                                <a href="#" class="btn btn-primary btn-scale">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
+                                                        <circle cx="8" cy="21" r="1"></circle>
+                                                        <circle cx="19" cy="21" r="1"></circle>
+                                                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                                                    </svg>
+                                                    Thêm vào giỏ
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <h3 class="product-card-title"><a href="#">Trứng gà thảo dược tươi</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Giàu protein</li>
-                                            <li>Tăng cường miễn dịch</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">8.000đ</span>
-                                        <span class="product-card-price-old">10.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Trứng gà</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(189)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Trứng gà thảo dược tươi</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Giàu protein</li>
-                                            <li>Tăng cường miễn dịch</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">8.000đ</span>
-                                        <span class="product-card-price-old">10.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="swiper-buttons feature-products-buttons">
+                                <div class="swiper-button-prev swiper-button"></div>
+                                <div class="swiper-button-next swiper-button"></div>
                             </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Trứng gà</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(189)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Trứng gà thảo dược tươi</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Giàu protein</li>
-                                            <li>Tăng cường miễn dịch</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">8.000đ</span>
-                                        <span class="product-card-price-old">10.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Trứng gà</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(189)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Trứng gà thảo dược tươi</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Giàu protein</li>
-                                            <li>Tăng cường miễn dịch</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">8.000đ</span>
-                                        <span class="product-card-price-old">10.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-buttons feature-products-buttons">
-                            <div class="swiper-button-prev swiper-button"></div>
-                            <div class="swiper-button-next swiper-button"></div>
                         </div>
                     </div>
-                </div>
-                <div class="feature-products-content" id="chicken-products">
-                    <div class="feature-products-list swiper swiper-slider">
-                        <div class="swiper-wrapper">
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Gà thảo dược</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(67)</span>
+                <?php endif; ?>
+                <?php if ($product_tab_3): ?>
+                    <div class="feature-products-content" id="chicken-products">
+                        <div class="feature-products-list swiper swiper-slider">
+                            <div class="swiper-wrapper">
+                                <?php foreach ($product_tab_3 as $featured_post): ?>
+                                    <?php
+                                    $permalink = get_permalink($featured_post);
+                                    $title = get_the_title($featured_post);
+                                    $custom_field = get_field('field_name', $featured_post);
+                                    $thumbnail_url = get_the_post_thumbnail_url($featured_post);
+                                    ?>
+                                    <div class="product-card animate-in swiper-slide">
+                                        <div class="product-card-media">
+                                            <div class="product-card-image">
+                                                <a href="<?php echo esc_url($permalink); ?>" class="product-card-link">
+                                                    <?php if ($thumbnail_url): ?>
+                                                        <img src="<?php echo $thumbnail_url; ?>" alt="">
+                                                    <?php else: ?>
+                                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="Placeholder Image">
+                                                    <?php endif; ?>
+                                                </a>
+                                            </div>
+                                            <span class="product-card-qr">
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
+                                                        <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+                                                        <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+                                                        <path d="M21 21v.01"></path>
+                                                        <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+                                                        <path d="M3 12h.01"></path>
+                                                        <path d="M12 3h.01"></path>
+                                                        <path d="M12 16v.01"></path>
+                                                        <path d="M16 12h1"></path>
+                                                        <path d="M21 12v.01"></path>
+                                                        <path d="M12 21v-1"></path>
+                                                    </svg>
+                                                </a>
+                                            </span>
+                                            <span class="sale-label">20%</span>
+                                            <span class="cate-lable">Trứng gà</span>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="product-card-review">
+                                                <div class="product-card-review-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <span class="star-count">(189)</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="product-card-title"><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                            <div class="product-card-description">
+                                                <ul>
+                                                    <li>Giàu protein</li>
+                                                    <li>Tăng cường miễn dịch</li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span class="product-card-price-current">8.000đ</span>
+                                                <span class="product-card-price-old">10.000đ</span>
+                                            </div>
+                                            <div class="product-card-actions">
+                                                <a href="#" class="btn btn-primary btn-scale">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
+                                                        <circle cx="8" cy="21" r="1"></circle>
+                                                        <circle cx="19" cy="21" r="1"></circle>
+                                                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                                                    </svg>
+                                                    Thêm vào giỏ
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <h3 class="product-card-title"><a href="#">Gà thảo dược nguyên con</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Thịt chắc ngọt</li>
-                                            <li>Không chất bảo quản</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">280.000đ</span>
-                                        <span class="product-card-price-old">320.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
                             </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Gà thảo dược</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(67)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Gà thảo dược nguyên con</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Thịt chắc ngọt</li>
-                                            <li>Không chất bảo quản</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">280.000đ</span>
-                                        <span class="product-card-price-old">320.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="swiper-buttons feature-products-buttons">
+                                <div class="swiper-button-prev swiper-button"></div>
+                                <div class="swiper-button-next swiper-button"></div>
                             </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Gà thảo dược</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(67)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Gà thảo dược nguyên con</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Thịt chắc ngọt</li>
-                                            <li>Không chất bảo quản</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">280.000đ</span>
-                                        <span class="product-card-price-old">320.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Gà thảo dược</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(67)</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-card-title"><a href="#">Gà thảo dược nguyên con</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Thịt chắc ngọt</li>
-                                            <li>Không chất bảo quản</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">280.000đ</span>
-                                        <span class="product-card-price-old">320.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-buttons feature-products-buttons">
-                            <div class="swiper-button-prev swiper-button"></div>
-                            <div class="swiper-button-next swiper-button"></div>
                         </div>
                     </div>
-                </div>
-                <div class="feature-products-content" id="medicinal-products">
-                    <div class="feature-products-list swiper swiper-slider">
-                        <div class="swiper-wrapper">
-                            <div class="product-card animate-in swiper-slide">
-                                <div class="product-card-media">
-                                    <div class="product-card-image">
-                                        <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400&h=300&fit=crop" alt="">
-                                    </div>
-                                    <span class="product-card-qr">
-                                        <a href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
-                                                <rect width="5" height="5" x="3" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="16" y="3" rx="1"></rect>
-                                                <rect width="5" height="5" x="3" y="16" rx="1"></rect>
-                                                <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
-                                                <path d="M21 21v.01"></path>
-                                                <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
-                                                <path d="M3 12h.01"></path>
-                                                <path d="M12 3h.01"></path>
-                                                <path d="M12 16v.01"></path>
-                                                <path d="M16 12h1"></path>
-                                                <path d="M21 12v.01"></path>
-                                                <path d="M12 21v-1"></path>
-                                            </svg>
-                                        </a>
-                                    </span>
-                                    <span class="sale-label">20%</span>
-                                    <span class="cate-lable">Trứng gà</span>
-                                </div>
-                                <div class="product-card-info">
-                                    <div class="product-card-review">
-                                        <div class="product-card-review-stars">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
-                                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
-                                            </svg>
-                                            <span class="star-count">(189)</span>
+                <?php endif; ?>
+                <?php if ($product_tab_4): ?>
+                    <div class="feature-products-content" id="medicinal-products">
+                        <div class="feature-products-list swiper swiper-slider">
+                            <div class="swiper-wrapper">
+                                <?php foreach ($product_tab_4 as $featured_post): ?>
+                                    <?php
+                                    $permalink = get_permalink($featured_post);
+                                    $title = get_the_title($featured_post);
+                                    $custom_field = get_field('field_name', $featured_post);
+                                    $thumbnail_url = get_the_post_thumbnail_url($featured_post);
+                                    ?>
+                                    <div class="product-card animate-in swiper-slide">
+                                        <div class="product-card-media">
+                                            <div class="product-card-image">
+                                                <a href="<?php echo esc_url($permalink); ?>" class="product-card-link">
+                                                    <?php if ($thumbnail_url): ?>
+                                                        <img src="<?php echo $thumbnail_url; ?>" alt="">
+                                                    <?php else: ?>
+                                                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=400&h=300&fit=crop" alt="Placeholder Image">
+                                                    <?php endif; ?>
+                                                </a>
+                                            </div>
+                                            <span class="product-card-qr">
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code w-full h-full text-green-600" data-lov-id="src/components/ui/qr-code.tsx:39:6" data-lov-name="QrCode" data-component-path="src/components/ui/qr-code.tsx" data-component-line="39" data-component-file="qr-code.tsx" data-component-name="QrCode" data-component-content="%7B%22className%22%3A%22w-full%20h-full%20text-green-600%22%7D">
+                                                        <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+                                                        <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+                                                        <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+                                                        <path d="M21 21v.01"></path>
+                                                        <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+                                                        <path d="M3 12h.01"></path>
+                                                        <path d="M12 3h.01"></path>
+                                                        <path d="M12 16v.01"></path>
+                                                        <path d="M16 12h1"></path>
+                                                        <path d="M21 12v.01"></path>
+                                                        <path d="M12 21v-1"></path>
+                                                    </svg>
+                                                </a>
+                                            </span>
+                                            <span class="sale-label">20%</span>
+                                            <span class="cate-lable">Trứng gà</span>
+                                        </div>
+                                        <div class="product-card-info">
+                                            <div class="product-card-review">
+                                                <div class="product-card-review-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star star-filled fill-current" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 star" data-lov-id="src/components/ProductCard.tsx:74:14" data-lov-name="Star" data-component-path="src/components/ProductCard.tsx" data-component-line="74" data-component-file="ProductCard.tsx" data-component-name="Star" data-component-content="%7B%7D">
+                                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                                    </svg>
+                                                    <span class="star-count">(189)</span>
+                                                </div>
+                                            </div>
+                                            <h3 class="product-card-title"><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                            <div class="product-card-description">
+                                                <ul>
+                                                    <li>Giàu protein</li>
+                                                    <li>Tăng cường miễn dịch</li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-card-price">
+                                                <span class="product-card-price-current">8.000đ</span>
+                                                <span class="product-card-price-old">10.000đ</span>
+                                            </div>
+                                            <div class="product-card-actions">
+                                                <a href="#" class="btn btn-primary btn-scale">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
+                                                        <circle cx="8" cy="21" r="1"></circle>
+                                                        <circle cx="19" cy="21" r="1"></circle>
+                                                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                                                    </svg>
+                                                    Thêm vào giỏ
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <h3 class="product-card-title"><a href="#">Trứng gà thảo dược tươi</a></h3>
-                                    <div class="product-card-description">
-                                        <ul>
-                                            <li>Giàu protein</li>
-                                            <li>Tăng cường miễn dịch</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <span class="product-card-price-current">8.000đ</span>
-                                        <span class="product-card-price-old">10.000đ</span>
-                                    </div>
-                                    <div class="product-card-actions">
-                                        <a href="#" class="btn btn-primary btn-scale">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart w-4 h-4 mr-2" data-lov-id="src/components/ProductCard.tsx:121:10" data-lov-name="ShoppingCart" data-component-path="src/components/ProductCard.tsx" data-component-line="121" data-component-file="ProductCard.tsx" data-component-name="ShoppingCart" data-component-content="%7B%22className%22%3A%22w-4%20h-4%20mr-2%22%7D">
-                                                <circle cx="8" cy="21" r="1"></circle>
-                                                <circle cx="19" cy="21" r="1"></circle>
-                                                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
-                                            </svg>
-                                            Thêm vào giỏ
-                                        </a>
-                                    </div>
-                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <div class="swiper-buttons feature-products-buttons">
+                                <div class="swiper-button-prev swiper-button"></div>
+                                <div class="swiper-button-next swiper-button"></div>
                             </div>
                         </div>
-                        <div class="swiper-buttons feature-products-buttons">
-                            <div class="swiper-button-prev swiper-button"></div>
-                            <div class="swiper-button-next swiper-button"></div>
-                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
             </div>
             <?php if ($feature_block) : ?>
                 <div class="feature-products-showcase animate-in">
